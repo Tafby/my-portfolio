@@ -1,51 +1,26 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import 'font-awesome/css/font-awesome.min.css';
+import Home from './components/Home';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-
-import 'font-awesome/css/font-awesome.min.css';
+import Tetris from './components/Tetris';
+import Traccoon from './components/Traccoon';
+import MentorMe from './components/MentorMe';
+import Guestbook from './components/Guestbook';
 
 class App extends Component {
 	render() {
 		return (
 			<div>
-				<h1 className="links">Tiffany Carter</h1>
 				<Router>
-					<div>
-						<nav>
-							<ul className="links">
-								<li>
-									<Link to="/">Home</Link>
-								</li>
-								<li>
-									<div>
-										{/* <i className="fab fa-github" /> */}
-										<FontAwesomeIcon icon={[ 'google' ]} />
-									</div>
-									<Link to="/aboutme">About Me</Link>
-								</li>
-								<li>
-									<a target="_blank" href="https://github.com/Tafby">
-										Github
-									</a>
-								</li>
-								<li>
-									<a target="_blank" href="https://medium.com/@tafby88">
-										Blog
-									</a>
-								</li>
-								<li>
-									<Link to="/projects/">Projects</Link>
-								</li>
-							</ul>
-						</nav>
-
-						{/* <Route path="/" exact component={App} /> */}
-						<Route path="/aboutme/" component={AboutMe} />
-						<Route path="/projects/" component={Projects} />
-					</div>
+					<Route path="/" exact component={Home} />
+					<Route path="/aboutme/" exact component={AboutMe} />
+					<Route path="/projects/" exact component={Projects} />
+					<Route path="/tetris/" exact component={Tetris} />
+					<Route path="/traccoon/" exact component={Traccoon} />
+					<Route path="/mentorme/" exact component={MentorMe} />
+					<Route path="/guestbook/" exact component={Guestbook} />
 				</Router>
 			</div>
 		);

@@ -1,22 +1,126 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Raleway+Dots|VT323');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Pridi:700');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #e8e6e9;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
-.links {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+html {
+	height: 100%;
 }
 li {
-	margin: 5px;
+	/* margin: 5px; */
 	list-style-type: none;
+	display: inline-block;
+}
+
+.resume-container {
+	height: 100%;
+	margin: 20px;
+}
+.resume-name {
+	font-family: 'Oswald', sans-serif;
+	font-size: 50px;
+	color: rgb(48, 47, 47);
+}
+.resume-text {
+	font-family: 'Source Code Pro', monospace;
+	color: rgb(48, 47, 47);
+}
+.blue {
+	color: rgb(42, 233, 173);
+}
+.titles {
+	font-family: 'Oswald', sans-serif;
+}
+.nav-container {
+	text-align: center;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-top: 200px;
+}
+.name {
+	animation-duration: 3s;
+	animation-name: slidein;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 60px;
+}
+
+@keyframes slidein {
+	from {
+		margin-left: 100%;
+		width: 300%;
+	}
+
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+}
+
+.line {
+	border: 1px solid black;
+}
+
+.icons {
+	position: relative;
+	transition: all 200ms ease-in;
+	transform: scale(1);
+	margin: 20px;
+	color: rgb(39, 223, 223);
+}
+.icons:hover {
+	transform: scale(1.5);
+}
+
+.project-wrapper {
+	display: grid;
+	grid-gap: 20px;
+	grid-auto-flow: inherit;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	border: 1px solid lightgray;
+	margin: 30px;
+	padding: 20px;
+	background-color: white;
+	border-radius: 10px;
+	border: 3px 3px solid rgba(211, 211, 211, 0.728);
+}
+
+.a {
+	grid-area: 1 / 2;
+}
+.b {
+	grid-area: 1 / 3;
+}
+.c {
+	grid-area: 2 / 2;
+}
+.d {
+	grid-area: 2 / 3;
+}
+
+.project {
+	width: 100%;
+	height: 100%;
+	box-shadow: 2px 2px 2px lightgrey;
+	border: 1px solid rgba(211, 211, 211, 0.728);
+	border-radius: 2px;
+	margin: 10px;
+}
+.img {
+	height: 400px;
+	width: 500px;
 }
