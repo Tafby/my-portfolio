@@ -8,7 +8,7 @@ body {
 		"Droid Sans", "Helvetica Neue", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: #e8e6e9;
+	background-color: #fcfbfc;
 }
 
 code {
@@ -44,30 +44,15 @@ li {
 }
 .nav-container {
 	text-align: center;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	margin-top: 100px;
+}
 
-	margin-top: 200px;
+.unstyled-list {
+	padding-inline-start: 0;
 }
 .name {
-	animation-duration: 3s;
-	animation-name: slidein;
 	font-family: 'Julius Sans One', sans-serif;
 	font-size: 60px;
-}
-
-@keyframes slidein {
-	from {
-		margin-left: 100%;
-		width: 300%;
-	}
-
-	to {
-		margin-left: 0%;
-		width: 100%;
-	}
 }
 
 .line {
@@ -86,20 +71,19 @@ li {
 }
 
 .project-wrapper {
-	display: grid;
-	grid-gap: 20px;
+	/* display: grid; */
+	/* grid-gap: 20px;
 	grid-auto-flow: inherit;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr); */
 	border: 1px solid lightgray;
 	margin: 30px;
 	padding: 20px;
 	background-color: white;
 	border-radius: 10px;
-	border: 3px 3px solid rgba(211, 211, 211, 0.728);
 }
 
-.a {
+/* .a {
 	grid-area: 1 / 2;
 }
 .b {
@@ -110,17 +94,17 @@ li {
 }
 .d {
 	grid-area: 2 / 3;
-}
+} */
 
 .project {
-	width: 100%;
+	text-align: center;
 	height: 100%;
-	box-shadow: 2px 2px 2px lightgrey;
+	width: 100%;
 	border: 1px solid rgba(211, 211, 211, 0.728);
-	border-radius: 2px;
+	border-radius: 4px;
 	margin: 10px;
 }
 .img {
-	height: 400px;
-	width: 500px;
+	height: 200px;
+	width: 300px;
 }

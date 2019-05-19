@@ -12,36 +12,41 @@ class Navbar extends Component {
 		return (
 			<div>
 				<div className="nav-container">
-					<ul>
-						<h2 className="name">Tiffany Carter</h2>
+					<h2 className="name">Tiffany Carter</h2>
+					<ul className="unstyled-list">
 						<li>
 							<Link title="Resume" to="/aboutme">
-								<FontAwesomeIcon className="icons" size="6x" icon={[ 'fas', 'user' ]} />{' '}
+								<FontAwesomeIcon className="icons" size="4x" icon={[ 'fas', 'user' ]} />{' '}
 							</Link>
+							<p>Resume</p>
 						</li>
 
 						<li>
 							<a title="Github" target="_blank" href="https://github.com/Tafby">
-								<FontAwesomeIcon className="icons" size="6x" icon={[ 'fab', 'github' ]} />
+								<FontAwesomeIcon className="icons" size="4x" icon={[ 'fab', 'github' ]} />
 							</a>
+							<p>Github</p>
 						</li>
 
 						<li>
 							<a title="My Blog" target="_blank" href="https://medium.com/@tafby88">
-								<FontAwesomeIcon className="icons" size="6x" icon={[ 'fab', 'medium' ]} />
+								<FontAwesomeIcon className="icons" size="4x" icon={[ 'fab', 'medium' ]} />
 							</a>
+							<p>Blog</p>
 						</li>
 
 						<li>
-							<a title="My Blog" target="_blank" href="https://www.linkedin.com/in/tafby/">
-								<FontAwesomeIcon className="icons" size="6x" icon={[ 'fab', 'linkedin-in' ]} />
+							<a title="Linkedin" target="_blank" href="https://www.linkedin.com/in/tafby/">
+								<FontAwesomeIcon className="icons" size="4x" icon={[ 'fab', 'linkedin-in' ]} />
 							</a>
+							<p>Linkedin</p>
 						</li>
 
 						<li>
 							<Link title="Projects" to="/projects/">
-								<FontAwesomeIcon className="icons" size="6x" icon={[ 'fas', 'code' ]} />
+								<FontAwesomeIcon className="icons" size="4x" icon={[ 'fas', 'code' ]} />
 							</Link>
+							<p>Projects</p>
 						</li>
 					</ul>
 				</div>

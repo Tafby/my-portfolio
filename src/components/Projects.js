@@ -14,24 +14,31 @@ class Projects extends Component {
 				<h2 style={{ textAlign: 'center' }}>My Projects</h2>
 				<div className="project-wrapper">
 					<div className="project a">
-						<Link to="/tetris">
-							<img className="img" src={tetris3} />
-						</Link>
+						<h3>Tetris</h3>
+						<p>Remade tetris using React as the front end with a Rails API</p>
+						<img className="img" src={tetris3} />
 					</div>
 					<div className="project b">
-						<Link to="/traccoon">
-							<img className="img" src={traccoon} />
-						</Link>
+						<h3>Traccoon</h3>
+						<p>A fun app to track raccoons in your neighborhood </p>
+						<p>Ruby on Rails, CSS, and HMTL, Google Maps API.</p>
+						<img className="img" src={traccoon} />
 					</div>
 					<div className="project c">
-						<Link to="/mentorme">
-							<img className="img" src={mentormehomepage} />
-						</Link>
+						<h3>MentorMe</h3>
+						<p>
+							This website allows you to find a mentor by viewing a list of people who have put themselves
+							out there as a mentor. Request the mentorship from the mentor. Once it's accepted begin
+							chatting and start goal setting!.
+						</p>
+						<p>React, Rails API</p>
+						<img className="img" src={mentormehomepage} />
 					</div>
 					<div className="project d">
-						<Link to="/guestbook">
-							<img className="img" src={guestbook} />
-						</Link>
+						<h3>GuestBook</h3>
+						<p>An app where you can create, comment, and like memories from events you attended.</p>
+						<p>Javascript, Rails API</p>
+						<img className="img" src={guestbook} />
 					</div>
 				</div>
 			</div>
