@@ -12,7 +12,7 @@ class Navbar extends Component {
 		return (
 			<div>
 				<div className="nav-container">
-					<h2 className="name">Tiffany Carter</h2>
+					<h2 className="name">TIFFANY CARTER</h2>
 					<ul className="unstyled-list">
 						<li>
 							<Link title="Resume" to="/aboutme">

@@ -13,8 +13,16 @@ const TETRISIMAGES = [
 		caption: 'Tetris'
 	},
 	{
-		src: '/images/tetris4.png',
-		thumbnail: '/images/tetris4.png',
+		src: '/images/tetris2.png',
+		thumbnail: '/images/tetris2.png',
+		thumbnailWidth: 320,
+		thumbnailHeight: 174,
+		isSelected: false,
+		caption: 'List of Scores'
+	},
+	{
+		src: '/images/tetris6.png',
+		thumbnail: '/images/tetris6.png',
 		thumbnailWidth: 320,
 		thumbnailHeight: 174,
 		isSelected: false,
@@ -144,39 +152,12 @@ class Projects extends Component {
 	render() {
 		return (
 			<div>
-				<h2 style={{ textAlign: 'center' }}>My Projects</h2>
+				<Link to="/">
+					<button className="back-button">BACK</button>
+				</Link>
+				<h2 className="projects-title">MY PROJECTS</h2>
 				<div className="project-wrapper">
-					<div className="project a">
-						<h3>Tetris</h3>
-						<p>Remade tetris using React as the front end with a Rails API</p>
-
-						<div
-							style={{
-								display: 'block',
-								border: '1px solid #ddd',
-								overflow: 'auto'
-							}}
-						>
-							{' '}
-							<Gallery images={TETRISIMAGES} />
-						</div>
-					</div>
-					<div className="project b">
-						<h3>Traccoon</h3>
-						<p>A fun app to track raccoons in your neighborhood </p>
-						<p>Ruby on Rails, CSS, and HMTL, Google Maps API.</p>
-						<div
-							style={{
-								display: 'block',
-								border: '1px solid #ddd',
-								overflow: 'auto'
-							}}
-						>
-							{' '}
-							<Gallery images={TRACCOONIMAGES} />
-						</div>
-					</div>
-					<div className="project c">
+					<div className="project ">
 						<h3>MentorMe</h3>
 						<p>
 							This website allows you to find a mentor by viewing a list of people who have put themselves
@@ -187,7 +168,6 @@ class Projects extends Component {
 						<div
 							style={{
 								display: 'block',
-								border: '1px solid #ddd',
 								overflow: 'auto'
 							}}
 						>
@@ -195,19 +175,45 @@ class Projects extends Component {
 							<Gallery images={MENTORIMAGES} />
 						</div>
 					</div>
-					<div className="project d">
+					<div className="project">
+						<h3>Traccoon</h3>
+						<p>A fun app to track raccoons in your neighborhood </p>
+						<p>Ruby on Rails, CSS, and HMTL, Google Maps API.</p>
+						<div
+							style={{
+								display: 'block',
+								overflow: 'auto'
+							}}
+						>
+							{' '}
+							<Gallery images={TRACCOONIMAGES} />
+						</div>
+					</div>
+
+					<div className="project">
+						<h3>Tetris</h3>
+						<p>Remade tetris using React as the front end with a Rails API</p>
+
+						<div
+							style={{
+								display: 'block',
+								overflow: 'auto'
+							}}
+						>
+							{' '}
+							<Gallery images={TETRISIMAGES} />
+						</div>
+					</div>
+					<div className="project">
 						<h3>GuestBook</h3>
 						<p>An app where you can create, comment, and like memories from events you attended.</p>
 						<p>Javascript, Rails API</p>
 						<div
 							style={{
 								display: 'block',
-								width: '50px;',
-								border: '1px solid #ddd',
 								overflow: 'auto'
 							}}
 						>
-							{' '}
 							<Gallery images={GBIMAGES} />
 						</div>
 					</div>
