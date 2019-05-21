@@ -21,14 +21,14 @@ class AboutMe extends Component {
 					<h3 className="titles">WORKING EXPERIENCE</h3>
 					<div className="line" />
 				</p>
-				<h3 className="blue">Avvo, Seattle</h3>
+				<h3>Avvo, Seattle</h3>
 				<p className="resume-text">
 					<b>Corporate Recruiter</b>
 					<br />
 					<small>January 2015 - September 2016</small> <br />
 					Worked with managers throughout the company in hiring candidates specifically for their department.
 					Those departments included IT, Sales, HR, Recruiting, Customer Care, Finance and some tech roles
-					Worked with each candidate throughout the entire interview process Sorted through resumes, sorced,
+					Worked with each candidate throughout the entire interview process, Sorted through resumes, sorced,
 					phone screened, and conducted a closing interview with each candidate at the end of interview loop
 				</p>
 				<p className="resume-text">
@@ -39,7 +39,7 @@ class AboutMe extends Component {
 					Worked with the development team to make our in-house sales tool run smoothly, and also give input
 					to create a new in-house sales tool Resolve operational issues that arise throughout the sales
 					department. Schedule interviews for sales and work with the HR and IT departments to set up new hire
-					computers, and accounts Book travel arrangements for sales department trade shows
+					computers, and accounts
 				</p>
 				<p className="resume-text">
 					<b>Customer Care Representative</b>
@@ -61,12 +61,17 @@ class AboutMe extends Component {
 					<h3 className="titles">EDUCATION</h3>
 					<div className="line"> </div>
 				</p>
-				<p className="blue">FlatIron School, Seattle WA January 2019 - May 2019 </p>
-				<p className="blue">
-					Shoreline Community College, Seattle WA — Associate in Arts,Informatics Pre-Major Intro to
-					programming - Python 1, Java 1, Java 2 September 2016 - May 2018
+				<p className="resume-text">
+					<b>Flatiron School</b>, <small>Seattle WA January 2019 - May 2019</small>{' '}
 				</p>
-				<p className="blue"> Continuing Education Certificate from University of Washington 2015</p>
+				<p className="resume-text">
+					<b>Shoreline Community College</b>,{' '}
+					<small>
+						Seattle WA — Associate in Arts, Informatics Pre-Major <br />Intro to programming - Python 1,
+						Java 1, Java 2 <br />September 2016 - May 2018
+					</small>
+				</p>
+				<p className="resume-text"> HTML, CSS, & Javascript Certificate from University of Washington 2015</p>
 			</div>
 		);
 	}
