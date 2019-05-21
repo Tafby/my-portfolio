@@ -2,37 +2,37 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import Gallery from 'react-grid-gallery';
-
+const thumbnailWidth = 100;
 const TETRISIMAGES = [
 	{
 		src: '/images/tetris3.png',
 		thumbnail: '/images/tetris3.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
+
 		isSelected: false,
 		caption: 'Tetris'
 	},
 	{
 		src: '/images/tetris2.png',
 		thumbnail: '/images/tetris2.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
+
 		isSelected: false,
 		caption: 'List of Scores'
 	},
 	{
 		src: '/images/tetris6.png',
 		thumbnail: '/images/tetris6.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
+
 		isSelected: false,
 		caption: 'List of Scores'
 	},
 	{
 		src: '/images/tetris5.png',
 		thumbnail: '/images/tetris5.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
+
 		isSelected: false,
 		caption: 'Post your score'
 	}
@@ -41,16 +41,16 @@ const TRACCOONIMAGES = [
 	{
 		src: '/images/traccoon.png',
 		thumbnail: '/images/traccoon.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
+
 		isSelected: false,
 		caption: 'Traccoon Home Page'
 	},
 	{
 		src: '/images/traccoon2.png',
 		thumbnail: '/images/traccoon2.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
+
 		isSelected: false,
 		caption: 'Traccoon My Neighborhood Sightings'
 	},
@@ -58,24 +58,24 @@ const TRACCOONIMAGES = [
 	{
 		src: '/images/traccoon4.png',
 		thumbnail: '/images/traccoon4.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
+
 		isSelected: false,
 		caption: 'Traccoon Report a Sighting'
 	},
 	{
 		src: '/images/traccoons.png',
 		thumbnail: '/images/traccoons.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
+
 		isSelected: false,
 		caption: 'See all reported Raccoons'
 	},
 	{
 		src: '/images/traccoon1.png',
 		thumbnail: '/images/traccoon1.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
+
 		isSelected: false,
 		caption: 'Traccoon Login Page'
 	}
@@ -84,32 +84,32 @@ const MENTORIMAGES = [
 	{
 		src: '/images/mmhomepage.png',
 		thumbnail: '/images/mmhomepage.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
+
 		isSelected: false,
 		caption: 'MentorMe Home Page'
 	},
 	{
 		src: '/images/mm1.png',
 		thumbnail: '/images/mm1.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
+
 		isSelected: false,
 		caption: 'My Profile'
 	},
 	{
 		src: '/images/mm2.png',
 		thumbnail: '/images/mm2.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
+
 		isSelected: false,
 		caption: 'Chat'
 	},
 	{
 		src: '/images/mm3.png',
 		thumbnail: '/images/mm3.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
+
 		isSelected: false,
 		caption: 'Search Mentors'
 	}
@@ -172,7 +172,7 @@ class Projects extends Component {
 							}}
 						>
 							{' '}
-							<Gallery images={MENTORIMAGES} />
+							<Gallery backdropClosesModal="true" images={MENTORIMAGES} />
 						</div>
 					</div>
 					<div className="project">
@@ -186,7 +186,7 @@ class Projects extends Component {
 							}}
 						>
 							{' '}
-							<Gallery images={TRACCOONIMAGES} />
+							<Gallery backdropClosesModal="true" images={TRACCOONIMAGES} />
 						</div>
 					</div>
 
@@ -201,7 +201,7 @@ class Projects extends Component {
 							}}
 						>
 							{' '}
-							<Gallery images={TETRISIMAGES} />
+							<Gallery backdropClosesModal="true" images={TETRISIMAGES} />
 						</div>
 					</div>
 					<div className="project">
@@ -214,7 +214,7 @@ class Projects extends Component {
 								overflow: 'auto'
 							}}
 						>
-							<Gallery images={GBIMAGES} />
+							<Gallery backdropClosesModal="true" images={GBIMAGES} />
 						</div>
 					</div>
 				</div>

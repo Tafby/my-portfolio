@@ -7,7 +7,7 @@ body {
 		"Droid Sans", "Helvetica Neue", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: #fcfbfc;
+	background-color: #f8f8f8;
 }
 
 code {
@@ -72,19 +72,20 @@ li {
 }
 
 .project-wrapper {
-	border: 1px solid lightgray;
+	/* border: 1px solid rgb(230, 229, 229); */
 	margin: 50px;
 	padding: 20px;
-	background-color: white;
-	border-radius: 10px;
+	/* background-color: white; */
 }
 
 .project {
-	border: 1px solid rgba(211, 211, 211, 0.728);
-	border-radius: 4px;
+	/* border: 1px solid rgba(211, 211, 211, 0.728); */
+
 	margin: 10px;
 	padding: 10px;
 	font-family: 'Source Code Pro', monospace;
+	border-bottom: 1px solid rgb(230, 229, 229);
+	padding-bottom: 40px;
 }
 
 .projects-title {
