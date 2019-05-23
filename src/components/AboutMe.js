@@ -12,9 +12,9 @@ class AboutMe extends Component {
 				<div className="line"> </div>
 
 				<p className="resume-text">
-					<h3 className="titles">SUMMARY</h3> Full stack web developer with a passion for creativity and
-					problem solving. Experience in Ruby on Rails, Javascript, & React with a background in Recruiting
-					and Operations.
+					<h3 className="titles">SUMMARY</h3> Full stack developer with a passion for creativity and problem
+					solving. Experience in Ruby on Rails, Javascript, & React with a background in Recruiting and
+					Operations.
 				</p>
 				<p className="titles">Skills: Ruby, Rails, Javascript, React, CSS, HTML, Basics of Java and Python </p>
 				<p>
@@ -27,25 +27,23 @@ class AboutMe extends Component {
 					<br />
 					<small>January 2015 - September 2016</small> <br />
 					Worked with managers throughout the company in hiring candidates specifically for their department.
-					Those departments included IT, Sales, HR, Recruiting, Customer Care, Finance and some tech roles
-					Worked with each candidate throughout the entire interview process, Sorted through resumes, sorced,
-					phone screened, and conducted a closing interview with each candidate at the end of interview loop
+					Sorted through resumes, sorced, phone screened, and conducted a closing interview with each
+					candidate at the end of interview loop
 				</p>
 				<p className="resume-text">
 					<b>Sales Operations Coordinator</b>
 					<br />
 					<small>October 2013 - December 2015</small>
 					<br />
-					Worked with the development team to make our in-house sales tool run smoothly, and also give input
-					to create a new in-house sales tool Resolve operational issues that arise throughout the sales
-					department. Schedule interviews for sales and work with the HR and IT departments to set up new hire
-					computers, and accounts
+					Worked with the development team to make our in-house sales tool run smoothly, Resolved operational
+					issues that arise throughout the sales department. Schedule interviews for sales and work with the
+					HR and IT departments to set up new hire computers, and accounts
 				</p>
 				<p className="resume-text">
 					<b>Customer Care Representative</b>
 					<br />
 					<small>April 2013 - October 2013</small>
-					<br /> Provided assistance and support to the consumers and attorneys who utilize the site Worked
+					<br /> Provided assistance and support to the consumers and attorneys who utilize the site, Worked
 					with the product and development team to discuss user feedback and bugs - ways we can improve
 					usability from both a consumer and administrative perspective, and formulate new product ideas
 				</p>
@@ -62,12 +60,12 @@ class AboutMe extends Component {
 					<div className="line"> </div>
 				</p>
 				<p className="resume-text">
-					<b>Flatiron School</b>, <small>Seattle WA January 2019 - May 2019</small>{' '}
+					<b>Flatiron School</b>, <small>Seattle WA January 2019 - May 2019</small>
 				</p>
 				<p className="resume-text">
 					<b>Shoreline Community College</b>,{' '}
 					<small>
-						Seattle WA — Associate in Arts, Informatics Pre-Major <br />Intro to programming - Python 1,
+						Seattle WA — Associate in Arts, Informatics(Pre-Major) <br />Intro to programming - Python 1,
 						Java 1, Java 2 <br />September 2016 - May 2018
 					</small>
 				</p>

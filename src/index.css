@@ -17,9 +17,9 @@ html {
 	height: 100%;
 }
 li {
-	/* margin: 5px; */
 	list-style-type: none;
 	display: inline-block;
+	margin: 5px;
 }
 
 .resume-container {
@@ -44,16 +44,24 @@ li {
 }
 .nav-container {
 	text-align: center;
-	margin-top: 100px;
 	font-family: 'Source Code Pro', monospace;
+	/* margin-top: 100px; */
+}
+
+@media only screen and (min-width: 479px) {
+	.nav-container {
+		margin-top: 100px;
+	}
 }
 
 .unstyled-list {
 	padding-inline-start: 0;
 }
 .name {
-	font-family: 'Julius Sans One', sans-serif;
-	font-size: 60px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 70px;
+	margin: 0;
+	color: rgb(82, 82, 82);
 }
 
 .line {
@@ -65,22 +73,21 @@ li {
 	transition: all 200ms ease-in;
 	transform: scale(1);
 	margin: 20px;
-	color: rgb(39, 223, 223);
+	color: rgb(110, 233, 221);
+	/* background-color: rgb(198, 192, 193); */
+	padding: 10px;
+	border-radius: 500px;
 }
 .icons:hover {
 	transform: scale(1.5);
 }
 
 .project-wrapper {
-	/* border: 1px solid rgb(230, 229, 229); */
 	margin: 50px;
 	padding: 20px;
-	/* background-color: white; */
 }
 
 .project {
-	/* border: 1px solid rgba(211, 211, 211, 0.728); */
-
 	margin: 10px;
 	padding: 10px;
 	font-family: 'Source Code Pro', monospace;
@@ -97,4 +104,49 @@ li {
 .back-button {
 	font-family: 'Oswald', sans-serif;
 	color: royalblue;
+}
+.name-box {
+	padding: 10px;
+	width: 90%;
+	max-width: 960px;
+	/* border: 1px solid rgb(238, 237, 237); */
+	margin: 0 auto;
+	background: linear-gradient(to bottom left, rgba(226, 236, 240, 0.79) 50%, rgba(250, 240, 244, 0.762) 50%);
+}
+
+@media only screen and (max-width: 479px) {
+	.name-box {
+		width: 90%;
+	}
+}
+
+.career-title {
+	width: 50%;
+	margin: auto;
+	padding: 4px;
+	border: 1px solid rgb(216, 215, 215);
+}
+.nav-title {
+	margin: auto;
+	font-size: 15px;
+	color: grey;
+}
+
+.gallery-wrapper {
+	overflow: auto;
+	min-height: 1px;
+	width: 100%;
+	display: block;
+}
+.project-img {
+	width: 50px !important;
+}
+img {
+	height: 100px !important;
+	max-width: 200px;
+	margin: 5px;
+}
+.ReactGridGallery_tile-viewport {
+	background-color: #f8f8f8;
+	height: 100px !important;
 }

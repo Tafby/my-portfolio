@@ -118,32 +118,29 @@ const GBIMAGES = [
 	{
 		src: '/images/guestbook.png',
 		thumbnail: '/images/guestbook.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
 		isSelected: false,
 		caption: 'Guestbook Home Page'
 	},
 	{
 		src: '/images/gb2.png',
 		thumbnail: '/images/gb2.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
 		isSelected: false,
 		caption: 'Memory page, post a comment or like'
 	},
 	{
 		src: '/images/gb3.png',
 		thumbnail: '/images/gb3.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
 		isSelected: false,
 		caption: 'Create a memory'
 	},
 	{
 		src: '/images/gb4.png',
 		thumbnail: '/images/gb4.png',
-		thumbnailWidth: 320,
-		thumbnailHeight: 174,
+		thumbnailWidth: thumbnailWidth,
+
 		isSelected: false,
 		caption: 'Memory Page, post a comment or like'
 	}
@@ -165,13 +162,8 @@ class Projects extends Component {
 							chatting and start goal setting!.
 						</p>
 						<p>React, Rails API</p>
-						<div
-							style={{
-								display: 'block',
-								overflow: 'auto'
-							}}
-						>
-							{' '}
+						<div className="gallery-wrapper">
+							<small>Click to view photos</small>{' '}
 							<Gallery backdropClosesModal="true" images={MENTORIMAGES} />
 						</div>
 					</div>
@@ -179,13 +171,8 @@ class Projects extends Component {
 						<h3>Traccoon</h3>
 						<p>A fun app to track raccoons in your neighborhood </p>
 						<p>Ruby on Rails, CSS, and HMTL, Google Maps API.</p>
-						<div
-							style={{
-								display: 'block',
-								overflow: 'auto'
-							}}
-						>
-							{' '}
+						<div className="gallery-wrapper">
+							<small>Click to view photos</small> {' '}
 							<Gallery backdropClosesModal="true" images={TRACCOONIMAGES} />
 						</div>
 					</div>
@@ -194,13 +181,8 @@ class Projects extends Component {
 						<h3>Tetris</h3>
 						<p>Remade tetris using React as the front end with a Rails API</p>
 
-						<div
-							style={{
-								display: 'block',
-								overflow: 'auto'
-							}}
-						>
-							{' '}
+						<div className="gallery-wrapper">
+							<small>Click to view photos</small> {' '}
 							<Gallery backdropClosesModal="true" images={TETRISIMAGES} />
 						</div>
 					</div>
@@ -208,13 +190,8 @@ class Projects extends Component {
 						<h3>GuestBook</h3>
 						<p>An app where you can create, comment, and like memories from events you attended.</p>
 						<p>Javascript, Rails API</p>
-						<div
-							style={{
-								display: 'block',
-								overflow: 'auto'
-							}}
-						>
-							<Gallery backdropClosesModal="true" images={GBIMAGES} />
+						<div className="gallery-wrapper">
+							<small>Click to view photos</small> <Gallery backdropClosesModal="true" images={GBIMAGES} />
 						</div>
 					</div>
 				</div>
