@@ -145,6 +145,15 @@ const GBIMAGES = [
 		caption: 'Memory Page, post a comment or like'
 	}
 ];
+const SNAKEIMAGES = [
+	{
+		src: '/images/snake.png',
+		thumbnail: '/images/snake.png',
+		thumbnailWidth: thumbnailWidth,
+		isSelected: false,
+		caption: 'Snake Game'
+	}
+];
 class Projects extends Component {
 	render() {
 		return (
@@ -180,6 +189,12 @@ class Projects extends Component {
 					<div className="project">
 						<h3>Tetris</h3>
 						<p>Remade tetris using React as the front end with a Rails API</p>
+						<p>
+							Play it here:{' '}
+							<a title="Tetris" target="_blank" href="https://reactetris.herokuapp.com/">
+								Tetris
+							</a>
+						</p>
 
 						<div className="gallery-wrapper">
 							<small>Click to view photos</small> {' '}
@@ -192,6 +207,15 @@ class Projects extends Component {
 						<p>Javascript, Rails API</p>
 						<div className="gallery-wrapper">
 							<small>Click to view photos</small> <Gallery backdropClosesModal="true" images={GBIMAGES} />
+						</div>
+					</div>
+					<div className="project">
+						<h3>Snake - Coming Soon</h3>
+						<p>Currently making snake using react</p>
+
+						<div className="gallery-wrapper">
+							<small>Click to view photos</small> {' '}
+							<Gallery backdropClosesModal="true" images={SNAKEIMAGES} />
 						</div>
 					</div>
 				</div>
