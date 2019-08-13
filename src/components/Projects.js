@@ -157,7 +157,7 @@ const SNAKEIMAGES = [
 		thumbnail: '/images/snake3.png',
 		thumbnailWidth: thumbnailWidth,
 		isSelected: false,
-		caption: 'Snake Game'
+		caption: 'Snake Game Over'
 	}
 ];
 class Projects extends Component {
@@ -174,8 +174,8 @@ class Projects extends Component {
 						<p>Made using react</p>
 						<p>
 							Play it here:{' '}
-							<a title="Snake" target="_blank" href="https://glowsnake.herokuapp.com/">
-								Snake!
+							<a title="GlowSnake" target="_blank" href="https://glowsnake.herokuapp.com/">
+								GlowSnake!
 							</a>
 						</p>
 						<div className="gallery-wrapper">
