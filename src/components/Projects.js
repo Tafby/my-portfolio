@@ -27,14 +27,6 @@ const TETRISIMAGES = [
 
 		isSelected: false,
 		caption: 'List of Scores'
-	},
-	{
-		src: '/images/tetris5.png',
-		thumbnail: '/images/tetris5.png',
-		thumbnailWidth: thumbnailWidth,
-
-		isSelected: false,
-		caption: 'Post your score'
 	}
 ];
 const TRACCOONIMAGES = [
@@ -147,8 +139,22 @@ const GBIMAGES = [
 ];
 const SNAKEIMAGES = [
 	{
-		src: '/images/snake.png',
-		thumbnail: '/images/snake.png',
+		src: '/images/snake1.png',
+		thumbnail: '/images/snake1.png',
+		thumbnailWidth: thumbnailWidth,
+		isSelected: false,
+		caption: 'Snake Game'
+	},
+	{
+		src: '/images/snake2.png',
+		thumbnail: '/images/snake2.png',
+		thumbnailWidth: thumbnailWidth,
+		isSelected: false,
+		caption: 'Snake Game'
+	},
+	{
+		src: '/images/snake3.png',
+		thumbnail: '/images/snake3.png',
 		thumbnailWidth: thumbnailWidth,
 		isSelected: false,
 		caption: 'Snake Game'
@@ -163,6 +169,35 @@ class Projects extends Component {
 				</Link>
 				<h2 className="projects-title">MY PROJECTS</h2>
 				<div className="project-wrapper">
+					<div className="project">
+						<h3>Snake!</h3>
+						<p>Made using react</p>
+						<p>
+							Play it here:{' '}
+							<a title="Snake" target="_blank" href="https://glowsnake.herokuapp.com/">
+								Snake!
+							</a>
+						</p>
+						<div className="gallery-wrapper">
+							<small>Click to view photos</small> {' '}
+							<Gallery backdropClosesModal="true" images={SNAKEIMAGES} />
+						</div>
+					</div>
+					<div className="project">
+						<h3>Tetris</h3>
+						<p>Remade tetris using React as the front end with a Rails API</p>
+						<p>
+							Play it here:{' '}
+							<a title="Tetris" target="_blank" href="https://reactetris.herokuapp.com/">
+								Tetris
+							</a>
+						</p>
+
+						<div className="gallery-wrapper">
+							<small>Click to view photos</small> {' '}
+							<Gallery backdropClosesModal="true" images={TETRISIMAGES} />
+						</div>
+					</div>
 					<div className="project ">
 						<h3>MentorMe</h3>
 						<p>
@@ -187,35 +222,11 @@ class Projects extends Component {
 					</div>
 
 					<div className="project">
-						<h3>Tetris</h3>
-						<p>Remade tetris using React as the front end with a Rails API</p>
-						<p>
-							Play it here:{' '}
-							<a title="Tetris" target="_blank" href="https://reactetris.herokuapp.com/">
-								Tetris
-							</a>
-						</p>
-
-						<div className="gallery-wrapper">
-							<small>Click to view photos</small> {' '}
-							<Gallery backdropClosesModal="true" images={TETRISIMAGES} />
-						</div>
-					</div>
-					<div className="project">
 						<h3>GuestBook</h3>
 						<p>An app where you can create, comment, and like memories from events you attended.</p>
 						<p>Javascript, Rails API</p>
 						<div className="gallery-wrapper">
 							<small>Click to view photos</small> <Gallery backdropClosesModal="true" images={GBIMAGES} />
-						</div>
-					</div>
-					<div className="project">
-						<h3>Snake - Coming Soon</h3>
-						<p>Currently making snake using react</p>
-
-						<div className="gallery-wrapper">
-							<small>Click to view photos</small> {' '}
-							<Gallery backdropClosesModal="true" images={SNAKEIMAGES} />
 						</div>
 					</div>
 				</div>
